@@ -49,8 +49,8 @@
         <a-asset-item id="bat-obj" src="bat.obj"></a-asset-item>
         <a-asset-item id="red-obj" src="red.obj"></a-asset-item>
         <a-asset-item id="black-obj" src="black.obj"></a-asset-item>
-        <a-asset-item id="shuttle-mtl" src="shuttle.mtl"></a-asset-item>
-        <a-asset-item id="shuttle-obj" src="shuttle.obj"></a-asset-item>
+        <a-asset-item id="UFO-mtl" src="UFO.mtl"></a-asset-item>
+        <a-asset-item id="UFO-obj" src="UFO.obj"></a-asset-item>
 
 
       
@@ -81,7 +81,7 @@
        <!-- Adding The Base OBJ For The Course -->
 
        <a-obj-model id="base1" scale="3 3 3" src="#base-obj" mtl="#base-mtl" position="0 0 0" rotation="0 0 0" n-mesh-collider="type: environment; convex: true" ></a-obj-model>
-       <!--a-obj-model id="shuttle" scale=".01 .01 .01" src="#shuttle-obj" mtl="#shuttle-mtl" position="0 10 -20" rotation="0 0 35" n-mesh-collider="type: environment; convex: true" ></a-obj-model-->
+       <a-obj-model id="UFO" scale=".1 .1 .1" src="#UFO-obj" mtl="#UFO-mtl" position="0 10 -20" rotation="0 0 35" n-mesh-collider="type: environment; convex: true" ></a-obj-model>
        
        <!-- Adding The Sign -->
 
@@ -211,7 +211,7 @@
 
       <a-box color="grey" position="-39.75 .6 -400" rotation="0 0 0" scale=".5 1 .5" n-mesh-collider="type: environment; convex: true"></a-box>
 
-      <a-box id="buttonc" color="red" scale="0.2 0.02 0.2" position="-39.75 1.11 -400" wire="on: click; emit: buttoncrack; targets: #buttoncrack" sync-n-sound></a-box>      
+      <a-box id="buttonc" color="red" scale="0.2 0.02 0.2" position="-39.75 1.11 -400" wire="on: click; emit: buttoncrack; targets: #buttoncrack"></a-box>      
 
       <a-box color="black" position="10 113 -400" rotation="35 0 0" scale="10 .5 10" n-mesh-collider="type: environment; convex: true"></a-box>
 
