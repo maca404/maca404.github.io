@@ -143,7 +143,7 @@
        <!-- Adding The Containers To Trigger The Sound Effects -->
 
        <a-entity id="fall" position="0 0 0" n-box-collider="isTrigger:true; type:environment; size: 30 3.5 15" n-container="capacity:1" wire="on: container-full; emit: scream; targets: #screamsound"></a-entity>
-       <!--a-entity id="fallmoon" position="10 10 -400" n-box-collider="isTrigger:true; type:environment; size: 150 5 150" n-container="capacity:1" wire="on: container-full; emit: crack; targets: #crackpipe"></a-entity-->
+       <a-entity id="fallmoon" position="10 70 -400" n-box-collider="isTrigger:true; type:environment; size: 150 1 150" n-container="capacity:1" wire="on: container-full; emit: crack; targets: #crackpipe"></a-entity>
        <!--a-box scale=".3 3.5 .3" position="0 0 0"></a-box-->
 
        <a-entity id="sword1" position="13 4 0" n-box-collider="isTrigger:true; type:environment; size: 3 3 3" n-container="capacity:1" wire="on: container-full; emit: sword; targets: #swordsound"></a-entity>
