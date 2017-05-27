@@ -80,6 +80,7 @@
        <!-- Adding The Base OBJ For The Course -->
 
        <a-obj-model id="base1" scale="3 3 3" src="#base-obj" mtl="#base-mtl" position="0 0 0" rotation="0 0 0" n-mesh-collider="type: environment; convex: true" ></a-obj-model>
+       <a-obj-model id="shuttle" scale="3 3 3" src="#shuttle-obj" mtl="#shuttle-mtl" position="0 0 0" rotation="0 0 0" n-mesh-collider="type: environment; convex: true" ></a-obj-model>
        
        <!-- Adding The Sign -->
 
@@ -142,7 +143,7 @@
        <!-- Adding The Containers To Trigger The Sound Effects -->
 
        <a-entity id="fall" position="0 0 0" n-box-collider="isTrigger:true; type:environment; size: 30 3.5 15" n-container="capacity:1" wire="on: container-full; emit: scream; targets: #screamsound"></a-entity>
-       <a-entity id="fallmoon" position="10 10 -400" n-box-collider="isTrigger:true; type:environment; size: 100 3.5 100" n-container="capacity:1" wire="on: container-full; emit: crack; targets: #crackpipe"></a-entity>
+       <a-entity id="fallmoon" position="10 10 -400" n-box-collider="isTrigger:true; type:environment; size: 50 3.5 50" n-container="capacity:1" wire="on: container-full; emit: crack; targets: #crackpipe"></a-entity>
        <!--a-box scale=".3 3.5 .3" position="0 0 0"></a-box-->
 
        <a-entity id="sword1" position="13 4 0" n-box-collider="isTrigger:true; type:environment; size: 3 3 3" n-container="capacity:1" wire="on: container-full; emit: sword; targets: #swordsound"></a-entity>
@@ -160,9 +161,9 @@
          <a-animation attribute="position" begin="win" dur="8000" easing="linear" from="16 400 0" to="16 4 0"></a-animation-->
        </a-entity>
 
-     <!--End Of The Gauntlet Course Entity -->  
-            
-     </a-entity>
+          <!--End Of The Gauntlet Course Entity -->  
+              
+        </a-entity>
 
       <!-- Adding The Elevator and Platform -->
 
@@ -207,19 +208,19 @@
 
      <!-- Adding The Sky Sphere And Moon -->
 
-<a-box color="grey" position="-39.75 .6 -400" rotation="0 0 0" scale=".5 1 .5" n-mesh-collider="type: environment; convex: true"></a-box>
+      <a-box color="grey" position="-39.75 .6 -400" rotation="0 0 0" scale=".5 1 .5" n-mesh-collider="type: environment; convex: true"></a-box>
 
-<a-box id="crack" color="red" scale="0.2 0.02 0.2" position="-39.75 1.11 -400" wire="on: click; emit: crack; targets: #crackpipe"></a-box>
+      <a-box id="crack" color="red" scale="0.2 0.02 0.2" position="-39.75 1.11 -400" wire="on: click; emit: crack; targets: #crackpipe"></a-box>      
 
-<a-box color="black" position="10 113 -400" rotation="35 0 0" scale="10 .5 10" n-mesh-collider="type: environment; convex: true"></a-box>
+      <a-box color="black" position="10 113 -400" rotation="35 0 0" scale="10 .5 10" n-mesh-collider="type: environment; convex: true"></a-box>
 
-<a-box color="grey" position="10 0 -400" rotation="0 0 0" scale="100 .1 100" n-mesh-collider="type: environment; convex: true"></a-box>
+      <a-box color="grey" position="10 0 -400" rotation="0 0 0" scale="100 .1 100" n-mesh-collider="type: environment; convex: true"></a-box>
 
-     <a-entity id="moe" position="10 0 -400" sync="own-on: whoa" sync-transform>
-        <a-sphere id="moon" material="src: #moon; repeat: 1 1" position="0 0 0" radius="80" segments-width="16" segments-height="16" n-sphere-collider="type: hologram">
+       <a-entity id="moe" position="10 0 -400" sync="own-on: whoa" sync-transform>
+          <a-sphere id="moon" material="src: #moon; repeat: 1 1" position="0 0 0" radius="80" segments-width="16" segments-height="16" n-sphere-collider="type: hologram">
           </a-sphere>
        <a-animation begin="whoa" attribute="rotation" dur="3000" easing="linear" repeat="0" direction="alternate" from="0 0 0" to="0 3600 0"></a-animation>
-     </a-entity>
+      </a-entity>
 
      <a-sky radius="1001" rotation="0 90 0" src="#sky" segments-width="16" segments-height="16"></a-sky>
 
