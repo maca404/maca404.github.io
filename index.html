@@ -189,10 +189,13 @@
          <!--a-box scale=".3 .3 .3" position="0 0 0"></a-box-->
          <a-animation attribute="position" begin="win" dur="8000" easing="linear" from="16 400 0" to="16 4 0"></a-animation-->
        </a-entity>
+       
+       <a-entity id="duck-spine-instantiator" geometry="primitive: box" material="src: #duck-icon" position='-39.75 1.11 -410' rotation="-25 0 0" scale="0.15 0.15 0.03" n-cockpit-parent instantiator="on: click; group: duckbb; mixin: duck duck-spine;" altspace-cursor-collider="enabled: true"></a-entity>
+       <a-entity id="goose-spine-instantiator" geometry="primitive: box" material="src: #goose-icon" position='-39.75 1.11 -420' rotation="-25 0 0" scale="0.15 0.15 0.03" n-cockpit-parent instantiator="on: click; group: duckbb; mixin: goose goose-spine;" altspace-cursor-collider="enabled: true"></a-entity>
+       <a-entity id="turtle-spine-instantiator" geometry="primitive: box" material="src: #turtle-icon" position='-39.75 1.11 -430' rotation="-25 0 0" scale="0.15 0.15 0.03" n-cockpit-parent instantiator="on: click; group: duckbb; mixin: turtle turtle-spine;" altspace-cursor-collider="enabled: true"></a-entity>
 
           <!--End Of The Gauntlet Course Entity -->  
               
-        </a-entity>
 
       <!-- Adding The Elevator and Platform -->
 
@@ -253,9 +256,7 @@
 
      <a-sky radius="1001" rotation="0 90 0" src="#sky" segments-width="16" segments-height="16"></a-sky>
 
-      <a-entity id="duck-spine-instantiator" geometry="primitive: box" material="src: #duck-icon" position='-0.81 0.005 -1.55' rotation="-25 0 0" scale="0.15 0.15 0.03" n-cockpit-parent instantiator="on: click; group: duckbb; mixin: duck duck-spine;" altspace-cursor-collider="enabled: true"></a-entity>
-      <a-entity id="goose-spine-instantiator" geometry="primitive: box" material="src: #goose-icon" position='-01.01 0.005 -1.55' rotation="-25 0 0" scale="0.15 0.15 0.03" n-cockpit-parent instantiator="on: click; group: duckbb; mixin: goose goose-spine;" altspace-cursor-collider="enabled: true"></a-entity>
-      <a-entity id="turtle-spine-instantiator" geometry="primitive: box" material="src: #turtle-icon" position='-0.61 0.005 -1.55' rotation="-25 0 0" scale="0.15 0.15 0.03" n-cockpit-parent instantiator="on: click; group: duckbb; mixin: turtle turtle-spine;" altspace-cursor-collider="enabled: true"></a-entity>
+      
 
     </a-scene>
   </body>
