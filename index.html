@@ -67,12 +67,12 @@ Contributors="Ducky; Brian"/>
         <img id="goose-icon" src="goose.jpg"/>
         <img id="turtle-icon" src="turtle.jpg"/>
 
-        <a-mixin id="goose" obj-model="obj: #goose-obj; mtl: #goose-mtl" collapse-model scale="0.1 0.1 0.1"></a-mixin>
-        <a-mixin id="goose-spine" rotation="0 -90 0" n-skeleton-parent="part: spine;" position="0.53 -0.4 -0.07" sync sync-n-skeleton-parent></a-mixin>
-        <a-mixin id="duck" obj-model="obj: #duck-obj; mtl: #duck-mtl" collapse-model scale="1 1 1"></a-mixin>
-        <a-mixin id="duck-spine" rotation="0 -90 0" n-skeleton-parent="part: spine;" position="0 -0.4 -0.05" sync sync-n-skeleton-parent></a-mixin>
-        <a-mixin id="turtle" obj-model="obj: #turtle-obj; mtl: #turtle-mtl" collapse-model scale="15 15 15"></a-mixin>
-        <a-mixin id="turtle-spine" rotation="0 -180 0" n-skeleton-parent="part: head;" position="0 0.0 0.1" sync sync-n-skeleton-parent></a-mixin>
+      <a-mixin id="goose" obj-model="obj: #goose-obj; mtl: #goose-mtl" collapse-model scale="0.1 0.1 0.1"></a-mixin>
+      <a-mixin id="goose-spine" rotation="0 -90 0" n-skeleton-parent="part: spine;" position="0.53 -0.4 -0.07" sync sync-n-skeleton-parent></a-mixin>
+      <a-mixin id="duck" obj-model="obj: #duck-obj; mtl: #duck-mtl" collapse-model scale="1 1 1"></a-mixin>
+      <a-mixin id="duck-spine" rotation="0 -90 0" n-skeleton-parent="part: spine;" position="0 -0.4 -0.05" sync sync-n-skeleton-parent></a-mixin>
+      <a-mixin id="turtle" obj-model="obj: #turtle-obj; mtl: #turtle-mtl" collapse-model scale="15 15 15"></a-mixin>
+      <a-mixin id="turtle-spine" rotation="0 -180 0" n-skeleton-parent="part: head;" position="0 0.0 0.1" sync sync-n-skeleton-parent></a-mixin>
 
 
 
@@ -177,13 +177,13 @@ Contributors="Ducky; Brian"/>
          <a-animation attribute="position" begin="win" dur="8000" easing="linear" from="16 400 0" to="16 4 0"></a-animation-->
        </a-entity>
 
+       <a-entity id="duck-spine-instantiator" geometry="primitive: box" material="src: #duck-icon" position='-0.81 0.005 -1.55' rotation="-25 0 0" scale="0.15 0.15 0.03" n-cockpit-parent instantiator="on: click; group: duckbb; mixin: duck duck-spine;" altspace-cursor-collider="enabled: true"></a-entity>
+       <a-entity id="goose-spine-instantiator" geometry="primitive: box" material="src: #goose-icon" position='-01.01 0.005 -1.55' rotation="-25 0 0" scale="0.15 0.15 0.03" n-cockpit-parent instantiator="on: click; group: duckbb; mixin: goose goose-spine;" altspace-cursor-collider="enabled: true"></a-entity>
+       <a-entity id="turtle-spine-instantiator" geometry="primitive: box" material="src: #turtle-icon" position='-0.61 0.005 -1.55' rotation="-25 0 0" scale="0.15 0.15 0.03" n-cockpit-parent instantiator="on: click; group: duckbb; mixin: turtle turtle-spine;" altspace-cursor-collider="enabled: true"></a-entity>
+      
       </a-entity
        
 
-       <a-entity id="duck-spine-instantiator" geometry="primitive: box" material="src: #duck-icon" position='-39.75 1.11 -401' rotation="0 0 0" scale="0.15 0.15 0.03" n-cockpit-parent instantiator="on: click; group: duckbb; mixin: duck duck-spine;" altspace-cursor-collider="enabled: true"></a-entity>
-       <a-entity id="goose-spine-instantiator" geometry="primitive: box" material="src: #goose-icon" position='-39.75 1.11 -402' rotation="0 0 0" scale="0.15 0.15 0.03" n-cockpit-parent instantiator="on: click; group: duckbb; mixin: goose goose-spine;" altspace-cursor-collider="enabled: true"></a-entity>
-       <a-entity id="turtle-spine-instantiator" geometry="primitive: box" material="src: #turtle-icon" position='-39.75 1.11 -403' rotation="0 0 0" scale="0.15 0.15 0.03" n-cockpit-parent instantiator="on: click; group: duckbb; mixin: turtle turtle-spine;" altspace-cursor-collider="enabled: true"></a-entity>   
-       </a-entity> 
        
        
        
