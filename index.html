@@ -61,6 +61,12 @@
         <a-asset-item id="black-obj" src="black.obj"></a-asset-item>
         <a-asset-item id="UFO-mtl" src="UFO.mtl"></a-asset-item>
         <a-asset-item id="UFO-obj" src="UFO.obj"></a-asset-item>
+        <a-asset-item id="duck-mtl" src="duck.mtl"></a-asset-item>
+        <a-asset-item id="duck-obj" src="duck.obj"></a-asset-item>
+        <a-asset-item id="goose-mtl" src="goose.mtl"></a-asset-item>
+        <a-asset-item id="goose-obj" src="goose.obj"></a-asset-item>
+        <a-asset-item id="turtle-mtl" src="turtle.mtl"></a-asset-item>
+        <a-asset-item id="turtle-obj" src="turtle.obj"></a-asset-item>
 
 
       
@@ -70,6 +76,18 @@
         <img id="bm" src="bm.1024x1024.jpg">
         <img id="moon" src="moon.jpg">
         <img id="welcome" src="welcome.jpg">
+        <img id="duck-icon" src="duck.jpg"/>
+        <img id="goose-icon" src="goose.jpg"/>
+        <img id="turtle-icon" src="turtle.jpg"/>
+
+        <a-mixin id="goose" obj-model="obj: #goose-obj; mtl: #goose-mtl" collapse-model scale="0.1 0.1 0.1"></a-mixin>
+        <a-mixin id="goose-spine" rotation="0 -90 0" n-skeleton-parent="part: spine;" position="0.53 -0.4 -0.07" sync sync-n-skeleton-parent></a-mixin>
+        <a-mixin id="duck" obj-model="obj: #duck-obj; mtl: #duck-mtl" collapse-model scale="1 1 1"></a-mixin>
+        <a-mixin id="duck-spine" rotation="0 -90 0" n-skeleton-parent="part: spine;" position="0 -0.4 -0.05" sync sync-n-skeleton-parent></a-mixin>
+        <a-mixin id="turtle" obj-model="obj: #turtle-obj; mtl: #turtle-mtl" collapse-model scale="15 15 15"></a-mixin>
+        <a-mixin id="turtle-spine" rotation="0 -180 0" n-skeleton-parent="part: head;" position="0 0.0 0.1" sync sync-n-skeleton-parent></a-mixin>
+
+
 
       </a-assets>      
       
