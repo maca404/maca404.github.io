@@ -1,2 +1,2 @@
-# theGuantlet
-Gauntlet App designed for AltspaceVR
+# a-Duck-Suit
+A duck costume app for Altspace
