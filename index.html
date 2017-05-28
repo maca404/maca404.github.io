@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-
-<!-- The Gauntlet 
-       by Ducky 
-        V1.02b
-      
-      Built With:
-       Clara.io - www.Clara.io
-       Sublime Text - www.sublimetext.com
-       Altspace - developer.altvr.com
-
-      Thanks:
-       Brian
-       Altspace Team
-       Everyone who fell to their death over and over in the name of testing
--->
-
-<html>
-  <head>
-
-    <meta charset="utf-8">
-    <title>The Gauntlet</title>
-    <meta name="The Gauntlet" content="The Gauntlet"> 
-
-    <!-- Java Script Loads -->
-    <script src="https://aframe.io/releases/0.3.0/aframe.js"></script>
-    <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v1.4.0/dist/aframe-altspace-component.min.js"></script>
-    <script src="https://sdk.altvr.com/libs/altspace.js/1.0.0/altspace.min.js"></script>
-    <script src="https://rawgit.com/jashkenas/backbone/master/backbone-min.js"></script>
-    
-    <script>
-      AFRAME.registerComponent('collapse-model', {
-        init: function () {
-          this.el.addEventListener('model-loaded', function () {
-            this.el.setObject3D('mesh', this.el.object3DMap.mesh.children[0]);
-            // setObject3D emits this event in a-frame 0.4.0
-            this.el.emit('object3dset', {type: 'mesh'});
-          }.bind(this));
-        }
-      });
-    </script>
+< 
 
   </head>
   <body>
@@ -191,12 +151,14 @@
          <!--a-box scale=".3 .3 .3" position="0 0 0"></a-box-->
          <a-animation attribute="position" begin="win" dur="8000" easing="linear" from="16 400 0" to="16 4 0"></a-animation-->
        </a-entity>
+
+       </a-entity> 
        
        <a-entity id="duck-spine-instantiator" geometry="primitive: box" material="src: #duck-icon" position='-39.75 1.11 -401' rotation="0 0 0" scale="0.15 0.15 0.03" n-cockpit-parent instantiator="on: click; group: duckbb; mixin: duck duck-spine;" altspace-cursor-collider="enabled: true"></a-entity>
        <a-entity id="goose-spine-instantiator" geometry="primitive: box" material="src: #goose-icon" position='-39.75 1.11 -402' rotation="0 0 0" scale="0.15 0.15 0.03" n-cockpit-parent instantiator="on: click; group: duckbb; mixin: goose goose-spine;" altspace-cursor-collider="enabled: true"></a-entity>
        <a-entity id="turtle-spine-instantiator" geometry="primitive: box" material="src: #turtle-icon" position='-39.75 1.11 -403' rotation="0 0 0" scale="0.15 0.15 0.03" n-cockpit-parent instantiator="on: click; group: duckbb; mixin: turtle turtle-spine;" altspace-cursor-collider="enabled: true"></a-entity>   
 
-       </a-entity> 
+       
                 <!--End Of The Gauntlet Course Entity -->  
               
              
