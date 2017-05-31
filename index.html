@@ -242,7 +242,9 @@ Contributors="Ducky; Brian"/>
         <a-animation attribute="position" begin="ahh" dur="10000" easing="linear" from="800 1400 -400" to="-400 -1400 -200"></a-animation>
       </a-sphere-->
 
-      <a-entity position="0 0 0" rotation="0 0 0" scale="5 5 5" n-layout-browser="url: http://youtube.com"></a-entity>
+      <a-entity position="0 0 0" rotation="0 0 0" scale="5 5 5"
+      n-layout-browser="url:http://youtube.com; isEnclosure:true">
+    </a-entity>
 
       <a-box id="deck" material="src: #bm; repeat: 10 10" depth="15" height=".25" width="15" position="2 11.5 -1.5" n-mesh-collider="type: environment; convex: true"></a-box>
 
