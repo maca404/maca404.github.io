@@ -106,7 +106,7 @@ Contributors="Ducky; Brian"/>
        </a-obj-model>
        <a-obj-model id="Turt" scale="100 100 100" src="#turtle-obj" mtl="#turtle-mtl" position="1 0 46" rotation="0 0 0" n-mesh-collider="type: environment; convex: true" ></a-obj-model>
 
-       <a-entity position="1 4 46" rotation="0 0 0" scale="2 2 2" n-layout-browser="url: http://youtube.com"></a-entity>
+
        <!-- Adding The Sign -->
 
        <a-obj-model scale="3 3 0.3" src="#black-obj" mtl="#base-mtl" position="0 4 0" rotation="0 0 0"></a-obj-model>
@@ -242,11 +242,12 @@ Contributors="Ducky; Brian"/>
         <a-animation attribute="position" begin="ahh" dur="10000" easing="linear" from="800 1400 -400" to="-400 -1400 -200"></a-animation>
       </a-sphere-->
 
+      <a-entity position="0 0 0" rotation="0 0 0" scale="5 5 5" n-layout-browser="url: http://youtube.com"></a-entity>
+
       <a-box id="deck" material="src: #bm; repeat: 10 10" depth="15" height=".25" width="15" position="2 11.5 -1.5" n-mesh-collider="type: environment; convex: true"></a-box>
 
 
      <!-- Adding The Sky Sphere And Moon -->
-      <a-entity position="0 1.6 1" rotation="0 0 0" scale="3 3 3" n-layout-browser="url: http://youtube.com" visible=""></a-entity>
       <a-box color="grey" position="-39.75 .6 -400" rotation="0 0 0" scale=".5 1 .5" n-mesh-collider="type: environment; convex: true"></a-box>
 
       <a-box id="buttonc" color="red" scale="0.2 0.02 0.2" position="-39.75 1.11 -400" wire="on: click; emit: buttoncr; targets: #buttoncrack"></a-box>      
