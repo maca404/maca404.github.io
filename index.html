@@ -14,7 +14,7 @@ Contributors="Ducky; Brian"/>
     <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v1.4.0/dist/aframe-altspace-component.min.js"></script>
     <script src="https://sdk.altvr.com/libs/altspace.js/1.0.0/altspace.min.js"></script>
     <script>
-      AFRAME.registerComponent('collapse-model', {
+          AFRAME.registerComponent('collapse-model', {
         init: function () {
           this.el.addEventListener('model-loaded', function () {
             this.el.setObject3D('mesh', this.el.object3DMap.mesh.children[0]);
@@ -23,6 +23,26 @@ Contributors="Ducky; Brian"/>
           }.bind(this));
         }
       });
+
+      var dummyMesh = new THREE.Mesh(
+      new THREE.CubeGeometry(1, 1, 1)
+      );    
+
+      dummyMesh.position.set(0, 5, 0);
+      dummyMesh.scale.set(10, 10, 10);
+
+      var config = {
+      url: 'https://www.youtube.com',
+      isEnclosure: true
+      };
+
+      var testEnclosure = new NativeComponent('n-layout-browser', dummyMesh).addTo(root, function () {
+      //Required for now, should be done only once after all other enclosures have been added.
+      scene.userData.altspace = scene.userData.altspace || {};
+      scene.userData.altspace.initialized = true;
+      });
+
+
     </script>
 
   </head>
@@ -261,9 +281,7 @@ Contributors="Ducky; Brian"/>
        <a-animation begin="whoa" attribute="rotation" dur="3000" easing="linear" repeat="0" direction="alternate" from="0 0 0" to="0 3600 0"></a-animation>
       </a-entity>
 
-      <a-entity id="youtube" scale="5 0.002 5" position="0 0 0" n-layout-browser="url: http://youtube.com"></a-entity>
-
-
+      
      <a-sky radius="1001" rotation="0 90 0" src="#sky" segments-width="16" segments-height="16"></a-sky>
 
       
