@@ -14,7 +14,7 @@ Contributors="Maca404; Brian"/>
     <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v1.4.0/dist/aframe-altspace-component.min.js"></script>
     <script src="https://rawgit.com/AltspaceVR/AltspaceSDK/master/dist/altspace.js"></script>
     <script>
-          AFRAME.registerComponent('collapse-model', {
+      AFRAME.registerComponent('collapse-model', {
         init: function () {
           this.el.addEventListener('model-loaded', function () {
             this.el.setObject3D('mesh', this.el.object3DMap.mesh.children[0]);
@@ -23,26 +23,6 @@ Contributors="Maca404; Brian"/>
           }.bind(this));
         }
       });
-
-      var dummyMesh = new THREE.Mesh(
-      new THREE.CubeGeometry(1, 1, 1)
-      );    
-
-      dummyMesh.position.set(0, 5, 0);
-      dummyMesh.scale.set(10, 10, 10);
-
-      var config = {
-      url: 'https://www.youtube.com',
-      isEnclosure: true
-      };
-
-      var testEnclosure = new NativeComponent('n-layout-browser', dummyMesh).addTo(root, function () {
-      //Required for now, should be done only once after all other enclosures have been added.
-      scene.userData.altspace = scene.userData.altspace || {};
-      scene.userData.altspace.initialized = true;
-      });
-
-
     </script>
 
   </head>
