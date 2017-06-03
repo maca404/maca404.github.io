@@ -17,7 +17,7 @@ Contributors="Maca404; Brian"/>
       AFRAME.registerComponent('collapse-model', {
         init: function () {
 
-000          this.el.addEventListener('model-loaded', function () {
+            this.el.addEventListener('model-loaded', function () {
             this.el.setObject3D('mesh', this.el.object3DMap.mesh.children[0]);
             // setObject3D emits this event in a-frame 0.4.0
             this.el.emit('object3dset', {type: 'mesh'});
@@ -61,10 +61,10 @@ Contributors="Maca404; Brian"/>
       
         <!-- Image Assets --> 
 
-        <img id="sky" src="sky3.jpg">
-        <img id="bm" src="bm.1024x1024.jpg">
-        <img id="moon" src="moon.jpg">
-        <img id="welcome" src="welcome.jpg">
+        <img id="sky" src="sky3.jpg"/>
+        <img id="bm" src="bm.1024x1024.jpg"/>
+        <img id="moon" src="moon.jpg"/>
+        <img id="welcome" src="welcome.jpg"/>
         <img id="duck-icon" src="duck.jpg"/>
         <img id="goose-icon" src="goose.jpg"/>
         <img id="turtle-icon" src="turtle.jpg"/>
