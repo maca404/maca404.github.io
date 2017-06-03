@@ -16,7 +16,8 @@ Contributors="Maca404; Brian"/>
     <script>
       AFRAME.registerComponent('collapse-model', {
         init: function () {
-          this.el.addEventListener('model-loaded', function () {
+
+000          this.el.addEventListener('model-loaded', function () {
             this.el.setObject3D('mesh', this.el.object3DMap.mesh.children[0]);
             // setObject3D emits this event in a-frame 0.4.0
             this.el.emit('object3dset', {type: 'mesh'});
@@ -75,7 +76,7 @@ Contributors="Maca404; Brian"/>
       <a-mixin id="duck-spine" rotation="0 -90 0" n-skeleton-parent="part: spine;" position="0 -0.4 -0.05" sync sync-n-skeleton-parent></a-mixin>
       <a-mixin id="turtle" obj-model="obj: #turtle-obj; mtl: #turtle-mtl" collapse-model scale="15 15 15"></a-mixin>
       <a-mixin id="turtle-spine" rotation="0 -180 0" n-skeleton-parent="part: head;" position="0 0.0 0.1" sync sync-n-skeleton-parent></a-mixin>
-      <a-mixin id="xxx" obj-model="obj: #penis-obj; mtl: #penis-mtl" collapse-model scale=".025 .025 .025"></a-mixin>
+      <a-mixin id="xxx" obj-model="obj: #penis-obj; mtl: #penis-mtl" collapse-model scale=".035 .035 .035"></a-mixin>
       <a-mixin id="xxx-spine" rotation="-90 0 0" n-skeleton-parent="part: spine;" position=".03 -.26 -.05" sync sync-n-skeleton-parent></a-mixin>
 
 
